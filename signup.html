@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Professional App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="logo-section">
+                <div class="logo">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <h1>Create Account</h1>
+                <p class="subtitle">Join us today</p>
+            </div>
+
+            <form id="signupForm" class="form-group">
+                <div class="input-wrapper">
+                    <label for="username">Username</label>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="username" placeholder="Choose a username" required>
+                    </div>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="password">Password</label>
+                    <div class="input-field">
+                        <i class="fas fa-key"></i>
+                        <input type="password" id="password" placeholder="Create a strong password" required>
+                    </div>
+                    <p class="password-hint">At least 6 characters</p>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="input-field">
+                        <i class="fas fa-check-circle"></i>
+                        <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                    </div>
+                </div>
+
+                <div class="terms-check">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                </div>
+
+                <button type="button" onclick="signup()" class="btn-login">
+                    <span>Create Account</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+
+            <div class="divider">
+                <span>Already have an account?</span>
+            </div>
+
+            <a href="index.html" class="btn-signup">Sign In</a>
+        </div>
+
+        <div class="info-section">
+            <div class="info-content">
+                <h2>Join Our Community</h2>
+                <p>Get started in minutes and unlock powerful features</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-rocket"></i>
+                        <span>Quick Setup</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <span>Active Community</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

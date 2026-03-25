@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Professional App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="logo-section">
+                <div class="logo">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h1>Welcome Back</h1>
+                <p class="subtitle">Sign in to your account</p>
+            </div>
+
+            <form id="loginForm" class="form-group">
+                <div class="input-wrapper">
+                    <label for="loginUser">Username</label>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="loginUser" placeholder="Enter your username" required>
+                    </div>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="loginPass">Password</label>
+                    <div class="input-field">
+                        <i class="fas fa-key"></i>
+                        <input type="password" id="loginPass" placeholder="Enter your password" required>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+
+                <div class="remember-me">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Remember me</label>
+                </div>
+
+                <button type="button" onclick="login()" class="btn-login">
+                    <span>Sign In</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+
+            <div class="divider">
+                <span>Don't have an account?</span>
+            </div>
+
+            <a href="signup.html" class="btn-signup">Create New Account</a>
+        </div>
+
+        <div class="info-section">
+            <div class="info-content">
+                <h2>Secure & Reliable</h2>
+                <p>Your data is protected with enterprise-grade security</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>SSL Encrypted</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-lock"></i>
+                        <span>Secure Login</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Verified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
